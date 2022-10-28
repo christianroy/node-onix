@@ -11,7 +11,7 @@
     },
     "dependencies": {
         "lodash": "^3.9.3",
-        "xml-schema": "git://github.com/christianroy/xml-schema.git",
+        "xml-schema": "ssh://github.com/christianroy/xml-schema.git",
         "subjects-utils": "0.0.1"
     },
     "devDependencies": {
