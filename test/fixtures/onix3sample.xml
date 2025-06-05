@@ -44,6 +44,8 @@
         <TitleElement>
           <TitleElementLevel>01</TitleElementLevel>
           <TitleText><![CDATA[The Title]]></TitleText>
+          <TitlePrefix>The</TitlePrefix>
+          <TitleWithoutPrefix>Title</TitleWithoutPrefix>
         </TitleElement>
       </TitleDetail>
       <Contributor>

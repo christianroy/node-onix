@@ -188,4 +188,9 @@ describe('Parsing ONIX 3', function() {
       product.description.collection[0].titleDetail[0].titleElement[0].titleElementLevel.should.equal(2);
       product.description.collection[0].titleDetail[0].titleElement[0].titleText.should.equal('Collection name');
     });
+
+    it('should find the prefix and title without prefix', function() {
+          product.description.title.element.prefix.should.eql('The');
+          product.description.title.element.titleWithoutPrefix.should.eql('Title');
+    });
 });
