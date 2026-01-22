@@ -143,6 +143,34 @@ describe('Parsing ONIX 3', function() {
       formDetails[0].should.eql('E101');
     });
 
+    it('should find product form features array', function() {
+      features = product.description.productFormFeatures;
+      should.exist(features);
+      features.should.be.an.instanceOf(Array);
+      features.length.should.eql(3);
+    });
+
+    it('should parse product form feature type and value', function() {
+      features = product.description.productFormFeatures;
+      features[0].productFormFeatureType.should.eql('09');
+      features[0].productFormFeatureValue.should.eql('11');
+      features[2].productFormFeatureType.should.eql('12');
+      features[2].productFormFeatureValue.should.eql('14');
+    });
+
+    it('should parse product form feature descriptions array', function() {
+      features = product.description.productFormFeatures;
+
+      // First feature has no descriptions
+      should.not.exist(features[0].productFormFeatureDescriptions);
+
+      // Second feature has multiple descriptions
+      features[1].productFormFeatureDescriptions.should.be.an.instanceOf(Array);
+      features[1].productFormFeatureDescriptions.length.should.eql(2);
+      features[1].productFormFeatureDescriptions[0].should.eql('This ebook has no accessibility features.');
+      features[1].productFormFeatureDescriptions[1].should.eql('Additional note about accessibility.');
+    });
+
     it('should find the description text for the product', function() {
       descriptionText = product.collateralDetail.textContent.find(function(tc) {
         return tc.type == '03';
