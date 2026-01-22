@@ -24,6 +24,20 @@
       <ProductForm>EA</ProductForm>
       <ProductFormDetail>E101</ProductFormDetail>
       <ProductFormDetail>E200</ProductFormDetail>
+      <ProductFormFeature>
+        <ProductFormFeatureType>09</ProductFormFeatureType>
+        <ProductFormFeatureValue>11</ProductFormFeatureValue>
+      </ProductFormFeature>
+      <ProductFormFeature>
+        <ProductFormFeatureType>09</ProductFormFeatureType>
+        <ProductFormFeatureValue>00</ProductFormFeatureValue>
+        <ProductFormFeatureDescription>This ebook has no accessibility features.</ProductFormFeatureDescription>
+        <ProductFormFeatureDescription>Additional note about accessibility.</ProductFormFeatureDescription>
+      </ProductFormFeature>
+      <ProductFormFeature>
+        <ProductFormFeatureType>12</ProductFormFeatureType>
+        <ProductFormFeatureValue>14</ProductFormFeatureValue>
+      </ProductFormFeature>
       <EpubTechnicalProtection>02</EpubTechnicalProtection>
       <Collection>
         <CollectionType>10</CollectionType>
